@@ -317,7 +317,7 @@ div.cards{
         width: .05rem;
         height: 8vw;
         line-height: 8vw;
-        background: rgb(201, 201, 201);
+        background: rgba(201, 201, 201, .5);
     }
 
 }
