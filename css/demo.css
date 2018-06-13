@@ -179,7 +179,7 @@ div.cards{
 
 @media screen and (min-width: 0px) and ( max-width: 420px){
     body{
-        background: none;
+        background: #fff;
     }
 
         
@@ -199,7 +199,6 @@ div.cards{
         height: 4.5vh;
         margin: 2vw auto;
         text-align: center;
-        background:red;
     }
     .search-btn{
         display: none;
