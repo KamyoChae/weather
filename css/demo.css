@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background: rgb(255, 255, 255);
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+input{
+    padding: 10px 15px; 
+    width: 500px;
+    display: inline-block;
+    color: #000;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: .5rem;
+}
+
+.search{
+    width: 700px;
+    margin:100px  auto 50px auto;
+    text-align: center;
+}
+.search-btn{
+    padding: 10px 15px; 
+    color: #fff;
+    display: inline-block;
+    background: #ed143d;
+    vertical-align: middle;
+    border-radius: .5rem;
+}
+.cards-wrapper-out{
+    width: 100%;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0)
+}
+.cards-wrapper{
+    width: 80%;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+span[class^="btn-card"]{
+    position: absolute;
+    height: 25rem;
+    line-height: 25rem;
+    width: 3rem;
+    background: rgba(142, 156, 175,0);
+    border-radius: .5rem;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    transition: all .25s;
+    cursor: pointer;
+}
+span[class^="btn-card"]:hover{
+    color: #888;
+    background: rgba(142, 156, 175,.2);
+}
+span[class^="btn-card"]:active{
+    background: rgba(142, 156, 175,.15);
+}
+span.btn-card-left{
+    left: 4%;
+}
+span.btn-card-right{
+    right: 4%;
+}
+
+.scroll-div{
+    position: relative;
+ 
+}
+div.cards{
+    color: #888;
+    width: 15rem;
+    height: 25rem;
+    display: inline-block;
+    white-space: normal;;
+    background: #fff;
+    margin: 0 2rem 2rem 2rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .3rem 1rem rgb(148, 148, 148);
+}
+
+.top{
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+    background-image: url(../images/bgjpg.jpg);
+    border-radius: .5rem;
+}
+.address-div{
+    width: 100%;
+    padding: .5rem 0 0 1rem;
+    text-align: left;
+    box-sizing: border-box;
+ 
+}
+.address{
+    color: rgba(255, 255, 255, .8)
+}
+.address-con{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border: .1rem solid rgba(255, 255, 2555, .7);
+    border-radius:2rem 2rem 0;
+    transform: rotate(45deg); 
+}
+
+.top-mid{
+    font-size: 3.8rem;
+    line-height: 4.3rem;
+    color: rgba(255, 255, 255, .65);
+}
+.top-bottom{
+    color: rgba(255, 255, 255, .65);
+    font-size: .6rem;
+}
+
+.content{
+    width: 100%;
+    height: 60%;
+    background: rgb(255, 255, 255);
+}
+.tips{
+    font-size: .6rem;
+    height: 20%;
+    line-height: 1rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem 0 1rem;
+    text-align: left;
+}
+.date-type{
+    width: 100%;
+    padding: .6rem;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+.content-list{
+    width: 100%;
+    font-size: .8rem;
+    box-sizing: border-box;
+}
+.list-left, .list-right{
+    display: inline-block;
+    width: 49%;
+    height: 2rem;
+    line-height: 2rem;
+
+}
+.list-left{
+    position: relative;
+}
+.vertical-line{
+    position: absolute;
+    width: .05rem;
+    height: .8rem;
+    margin-top: .6rem;
+    line-height: .8rem;
+    background: #ccc;
+}
+
+
+
+
+
+@media screen and (min-width: 0px) and ( max-width: 420px){
+    body{
+        background: none;
+    }
+
+        
+    input{
+        padding: 2vw; 
+        width: 95%;
+        margin: auto;
+        box-sizing: border-box;
+        color: #000;
+        border: 1px solid #ddd;
+        outline: none;
+        border-radius: .5rem;
+    }
+
+    .search{
+        width: 100vw;
+        height: 4.5vh;
+        margin: 2vw auto;
+        text-align: center;
+    }
+    .search-btn{
+        display: none;
+    }
+    .cards-wrapper-out{
+        width: 100%;
+        vertical-align: middle;
+        background: rgba(255, 255, 255, 0);
+        background: red;
+    }
+    .cards-wrapper{
+        width: 100%;
+
+    }
+    span[class^="btn-card"]{
+        display: none;
+    }
+
+
+    .scroll-div{
+        position: relative;
+        background: #000;
+        width: 100%;
+        height: 95.5vh;
+    }
+    div.cards{
+        color: #888;
+        width: 100vw;
+        height: 95.5vh;
+        display: inline-block;
+        white-space: normal;;
+        background: #fff;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .top{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        background-image: url(../images/bgjpg.jpg);
+        border-radius: 0;
+    }
+    .address-div{
+        width: 100%;
+        padding: 2vw 4vw;
+        text-align: left;
+        box-sizing: border-box;
+    
+    }
+    .address{
+        color: rgba(255, 255, 255, .8)
+    }
+    .address-con{
+        display: inline-block;
+        width: .5rem;
+        height: .5rem;
+        border: .1rem solid rgba(255, 255, 2555, .7);
+        border-radius:2rem 2rem 0;
+        transform: rotate(45deg); 
+    }
+
+    .top-mid{
+        font-size: 30vw;
+        line-height: 30vw;
+        color: rgba(255, 255, 255, .65);
+    }
+
+    .top-bottom{
+        color: rgba(255, 255, 255, .5);
+        font-size: 5vw;
+        font-weight: 100;
+        line-height: 5vw;
+        margin-top: 4vw;
+    }
+
+    .content{
+        width: 100%;
+        height: 60%;
+        background: rgb(255, 255, 255);
+    }
+
+    .tips{
+        font-size: 4vw;
+        height: 20%;
+        line-height: 6vw;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .date-type{
+        width: 100%;
+        padding: 0 .6rem .6rem .6rem;
+        font-size: 9vw;
+        box-sizing: border-box;
+    }
+    .content-list{
+        width: 100%;
+        font-size: 5vw;
+        margin-top: 10vw;
+        box-sizing: border-box;
+    }
+    .list-left, .list-right{
+        display: inline-block;
+        width: 49%;
+        height: 8vw;
+        line-height: 8vw;
+        margin: 3vw 0 0 0 ;
+    }
+    .list-left{
+        position: relative;
+    }
+    .vertical-line{
+        position: absolute;
+        width: .05rem;
+        height: 8vw;
+        line-height: 8vw;
+        background: rgb(201, 201, 201);
+    }
+
+}
