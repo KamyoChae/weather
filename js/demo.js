@@ -58,12 +58,14 @@ function createDiv(Arr, GetData) {
             // dat 系统“日” ， date 回传“日”
             GetData.wendu = GetData.wendu;
             GetData.tips = GetData.ganmao;
+            GetData.wend = GetData.wendu;
             date[1] = "今天";
         } else {
-            GetData.wendu = (parseInt(high) + parseInt(low)) / 2;
+            if(dat-1 == parseInt(date[0])){ date[1] = "昨天";};
+            if(dat+1 == parseInt(date[0])){ date[1] = "明天";};
+            GetData.wend = (parseInt(high) + parseInt(low)) / 2 + 2;
             GetData.tips = "算命的还没算出来今天是个啥情况";
         }
-
         str += '<div class="cards">\
         <div class="top">\
             <div class="address-div">\
