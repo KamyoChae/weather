@@ -72,7 +72,7 @@ function createDiv(Arr, GetData) {
                 <span class="address">'+ GetData.city + '</span>\
                 <span class="address-con"></span>\
             </div>\
-            <div class="top-mid">'+ GetData.wendu + '</div>\
+            <div class="top-mid">'+ GetData.wend + '</div>\
             <div class="top-bottom">'+ year + '/' + month + '/' + date[0] + '</div>\
         </div>\
         <div class="content">\
