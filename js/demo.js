@@ -24,12 +24,18 @@ function creatScript(data) {
 }
 
 function dojson(res) {
-    var getData = res.data;
-    var arr = res.data.forecast;
-    getData.yesterday.fengxiang = getData.yesterday.fx;
-    getData.yesterday.fengli = getData.yesterday.fl;
-    arr.unshift(getData.yesterday);
-    createDiv(arr, getData)
+    try {
+        var getData = res.data;
+        var arr = res.data.forecast;
+        console.log(getData)
+        getData.yesterday.fengxiang = getData.yesterday.fx;
+        getData.yesterday.fengli = getData.yesterday.fl;
+        arr.unshift(getData.yesterday);
+        createDiv(arr, getData)
+    } catch (error) {
+       console.log("获取城市信息异常，换个城市试试！")
+    }
+
 }
 
 function createDiv(Arr, GetData) {
@@ -66,6 +72,7 @@ function createDiv(Arr, GetData) {
             GetData.wend = (parseInt(high) + parseInt(low)) / 2 + 2;
             GetData.tips = "算命的还没算出来今天是个啥情况";
         }
+
         str += '<div class="cards">\
         <div class="top">\
             <div class="address-div">\
