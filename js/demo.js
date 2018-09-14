@@ -132,7 +132,6 @@ $(".btn-card-right").on('click', function () {
 
 
 var flag = 0;
-
 //左右滑动翻页
 $(".scroll-div").on('touchstart', function (e) {
 
