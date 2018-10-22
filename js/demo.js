@@ -17,7 +17,7 @@ $("input[type='text']").on('input', function () {
 })
 
 function creatScript(data) {
-    var oScript = "<script src='http://wthrcdn.etouch.cn/weather_mini?city=" + data + "&callback=dojson'>";
+    var oScript = "<script src='https://wthrcdn.etouch.cn/weather_mini?city=" + data + "&callback=dojson'>";
     $(document.body).append(oScript);
 
     $("script[src^='http']").remove();
