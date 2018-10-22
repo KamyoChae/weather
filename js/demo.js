@@ -17,7 +17,7 @@ $("input[type='text']").on('input', function () {
 })
 
 function creatScript(data) {
-    var oScript = "<script src='https://wthrcdn.etouch.cn/weather_mini?city=" + data + "&callback=dojson'>";
+    var oScript = "<script src='http://wthrcdn.etouch.cn/weather_mini?city=" + data + "&callback=dojson'>";
     $(document.body).append(oScript);
 
     $("script[src^='http']").remove();
@@ -66,7 +66,7 @@ function createDiv(Arr, GetData) {
             GetData.tips = GetData.ganmao;
             GetData.wend = GetData.wendu;
             date[1] = "今天";
-        } else {
+        } else { 
             if(dat-1 == parseInt(date[0])){ date[1] = "昨天";};
             if(dat+1 == parseInt(date[0])){ date[1] = "明天";};
             GetData.wend = (parseInt(high) + parseInt(low)) / 2 + 2;
@@ -132,6 +132,7 @@ $(".btn-card-right").on('click', function () {
 
 
 var flag = 0;
+
 //左右滑动翻页
 $(".scroll-div").on('touchstart', function (e) {
 
